@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+	<meta charset="UTF-8">
+	<title>Title</title>
 </head>
 <body>
-$END$
+<script type="text/javascript">
+	var json = {
+	    "k1":[
+			{"name":"a1","age":18},
+			{"name":"a2","age":19}
+		],
+		"k2":[
+			{"name":"b1","age":22},
+			{"name":"b2","age":24}
+		]
+	}
+    for (var i = 0; i < json.k1.length; i++) {
+		console.log(json.k1[i].name+":"+json.k1[i].age);
+    }
+
+</script>
+
 </body>
 </html>
